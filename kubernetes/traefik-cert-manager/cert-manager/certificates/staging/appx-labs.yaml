@@ -1,0 +1,15 @@
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: appx-cloud-com
+  namespace: ingress
+spec:
+  secretName: appx-cloud-com-staging-tls
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  commonName: "*.appx-cloud.com"
+  dnsNames:
+  - "appx-cloud.com"
+  - "*.appx-cloud.com"
