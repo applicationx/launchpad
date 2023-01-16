@@ -18,4 +18,4 @@ spec:
         - name: api@internal
           kind: TraefikService
   tls:
-    secretName: appx-cloud-com-staging-tls
+    secretName: appx-cloud-com-tls
